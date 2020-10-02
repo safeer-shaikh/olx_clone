@@ -1,5 +1,78 @@
 .header_settings{
     width: 100%;
-    height: 70px;
+    height: 60px;
     background-color: rgb(245, 245, 245);
+    box-shadow: 0px 1px #dadada;
+    display: flex;
+}
+.image_settings img{
+    margin-top: 10px;
+    margin-left: 17px;
+    width: 37px;
+    height: 37px;
+}
+.loc_search{
+    background-color: #fff;
+    border: 2px solid #002f34;
+    border-radius: 3px;
+    height: 38px;
+    margin-left: 14px;
+    margin-top: 8px;
+    box-shadow: 1px 1px #dadada;
+    width: 220px;
+}
+.loc_search i{
+    margin-left: 8px;
+    font-size: 18px;
+    margin-top: 8px;
+}
+.loc_search input{
+    margin-left: 12px;
+    width: 135px;
+    font-size: 13px;
+    color: #303030;
+    height: 92%;
+}
+
+.loc_searchBar{
+    border: 0px solid;
+    font-size: 14px;
+}
+
+.down_icon {
+    border: 0px solid;
+    background-color: #fff;
+    font-size: 22px;
+}
+.things_search{
+    background-color: #fff;
+    border: 2px solid #002f34;
+    border-radius: 3px;
+    height: 38px;
+    margin-left: 14px;
+    margin-top: 8px;
+    box-shadow: 1px 1px #dadada;
+    width: 520px;
+    display: flex;
+}
+.things_search input{
+    border: 0px solid;
+    background-color: #fff;
+    margin: 0px;
+    padding: 0px;
+    width: 480px;
+    height: 100%;
+}
+.search_icon{
+    border: 0px solid;
+    height: 100%;
+    width: 40px;
+    background-color: #002f34;
+    border-radius: 0 3px 0 3px;
+}
+.search_icon i{
+    color: #fff;
+    margin-top: 7px;
+    margin-left: 11px;
+    font-size: 18px;
 }
