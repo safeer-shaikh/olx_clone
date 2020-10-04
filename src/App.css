@@ -1,5 +1,5 @@
 .header_settings{
-    width: 100%;
+    max-width: 1400px;
     height: 68px;
     background-color: rgb(245, 245, 245);
     box-shadow: 0px 1px #dadada;
@@ -129,8 +129,55 @@
     margin: 0 auto ;
     margin-top: 10px;
 }
+.main_SubHeader{
+    display: flex;
+}
 .hNav{
-    height: 40px;
+    height: 45px;
+    width: 150px;
+    margin-top: 1px;
+    margin-left: 18px;
+    font-size: 14px;
+}
+.downBtnOfhNav{
+    border: 0px solid;
+    background-color: #fff;
+    font-size: 14px;
+    margin-left: 5px;
+    width: 160px;
+    height: 45px;
+    font-family: sans-serif;
+}
+.downBtnOfhNav:hover{
+    cursor: pointer;
+}
+.downBtnOfhNav i{
+    margin-left: 5px;
+    font-size: 16px;
+}
+.hNavOthers{
+    margin-top: 8px;
+    height: 30px;
+    margin-left: 20px;
+    display: flex;
+}
+.items li{
+    display: inline-block;
+}
+.hNavOthers button{
+    font-size: 14px;
+    border: 0px solid;
+    background-color: #fff;
+    margin-left: 10px;
+    font-family: sans-serif;
+}
+.hNavOthers button:hover{
+    cursor: pointer;
+    color: lightskyblue;
+}
+.bannerDiv{
     width: 100%;
-    background-color: yellow;
+    height: 250px;
+    background-image: url(./images/olxMainBanner.jpg);
+    background-position: center;
 }
