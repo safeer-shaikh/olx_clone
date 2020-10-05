@@ -6,7 +6,7 @@
     display: flex;
 }
 .container{
-    width: 100%;
+    max-width: 1400px;
     display: inline;
 }
 .image_settings img{
@@ -181,3 +181,120 @@
     background-image: url(./images/olxMainBanner.jpg);
     background-position: center;
 }
+.mainSubBanner{
+    display: flex;
+    justify-content: center;
+    max-width: 1400px;
+    height: 198px;
+    background-color: #002F3408;
+    border: 0px solid;
+    box-shadow: 1px #dadada;
+}
+.mobile{
+    margin-left:0px ;
+}
+.FirstDivSubBanner{
+    margin-left: 20px;
+    width: 360px;
+}
+.FirstSpanSubBanner{
+    font-size: 34px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.SecondSpanSubBanner{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: grey;
+}
+.SecondDivSubBanner{
+    max-width: 400px;
+    margin-left: 40px;
+}
+.SecondDivSubBanner span{
+    margin-top: 40px;
+    font-size: 17px;
+    font-weight: 600;
+}
+.SecondDivSubBanner button{
+    border: 0px solid;
+    margin: 0px;
+    background-color: #c2c5c508;
+}
+.store{
+    width: 128px;
+    height: 40px;
+}
+.store:hover{
+    cursor: pointer;
+}
+.mainSubFooter{
+    display: flex;
+    height: 160px;
+    background-color: #ebeeef;
+    /* justify-content: space-around; */
+    max-width: 1400px;
+}
+.mainSubFooter section{
+    margin-left: 70px;
+    margin-top: 10px;
+}
+.justheading{
+    margin-top: 10px;
+    font-size: 14px;
+    color: #002f34;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;   
+}
+
+.ulSubFooter{
+    list-style-type: none;
+    display: inline;
+}
+.ulSubFooter li{
+    display: list-item;
+    text-align: left;
+    margin-top: 4px;
+    font-size: 13px;
+    color: rgb(143, 140, 140);
+}
+.sociallinks{
+    display: flex;
+}
+.sociallinks a{
+    font-size: 20px;
+    margin-left: 15px;
+}
+.storeBtn{
+    border: 0px solid;
+}
+.storeBtn img{
+    width: 110px;
+    height: 32px;
+}
+.mainFooter{
+    background-color: #002f34;
+    width: 100%;
+    height: 50px;
+    display: flex;
+}
+.section1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    font-size: 13px;
+    font-weight: bold;
+    margin-left: 90px;
+    margin-top: 15px;
+}
+.section1 a{
+    margin-left: 10px;
+}
+.section2{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    font-size: 13px;
+    font-weight: bold;
+    margin-left: 560px;
+    margin-top: 15px;
+}
+
