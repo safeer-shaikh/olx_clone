@@ -1,44 +1,132 @@
-.header_settings{
+.container{
     max-width: 1400px;
+    display: inline;
+}
+
+.header_settings{
+    position: fixed;
+    width: 1400px;
     height: 68px;
     background-color: rgb(245, 245, 245);
     box-shadow: 0px 1px #dadada;
     display: flex;
 }
-.container{
-    max-width: 1400px;
-    display: inline;
-}
+
 .image_settings img{
     margin-top: 15px;
-    margin-left: 38px;
+    margin-left: 40px;
     width: 40px;
     height: 40px;
 }
+
 .image_settings img:hover{
     cursor: pointer;
 }
+
 .loc_search{
     background-color: #fff;
     border: 2px solid #002f34;
     border-radius: 3px;
-    height: 44px;
+    height: 48px;
     margin-left: 20px;
     margin-top: 10px;
     box-shadow: 1px 1px #dadada;
     width: 270px;
 }
+
 .loc_search i{
-    margin-left: 10px;
-    font-size: 21px;
+    margin-right: 10px;
+    font-size: 22px;
+}
+
+.loc_search input{
+    width: 180px;
+    height: 40px;
+    font-size: 17px;
+    color: #303030;
+    border-top: hidden;
+    border-right: hidden;
+    border-left: hidden;
+    border-bottom: hidden;
+}
+
+.dropdown-menu{
+    overflow-y: scroll;
+    width: 268px;
+    margin-right: 0px;
+    max-height: 320px;
+}
+
+.dropdown-item{
+    height: 68px;
+}
+
+.currentlocationdiv{
+    height: 70px;
+}
+
+.cities{
+    max-height: 40px;
+    margin-left: 15px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.dropdown-item:hover{
+    background-color: rgb(81, 249, 255);
+}
+
+.dropdown-item div{
+    color: rgb(89, 120, 214);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.thisisone{
+    max-width: 210px;
+    margin-left: 20px;
+}
+
+.thisisone:hover{
+    background-color: rgb(81, 249, 255);
+}
+
+.locationfont{
+    font-size: 14px;
+    padding: 0px;
+    margin: 0px;
+}
+.popularlocation{
+    color: slategrey;
+    font-size: 13px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* margin-left: 10px;
+    margin-top: 10px; */
+    padding: 20px;
+}
+
+.input-group-append:active{
+    transform: rotateX(180);
+}   
+.form-control{
+    margin: 0px;
+    padding: 0px;
+}
+.btn i{
     margin-top: 8px;
 }
-.loc_search input{
-    margin-left: 15px;
-    width: 165px;
-    font-size: 16px;
-    color: #303030;
-    height: 92%;
+
+.btn{
+    padding: 0px;
+    width: 267px;
+    border-radius: 0px;
+    height: 44px;
+    margin-right: 0px;
+    display: flex;
+    margin-left: 0px;
+}
+
+.pakarisko{
+    margin-top: 9px;
+    margin-left: 10px;
 }
 
 .loc_searchBar{
@@ -51,20 +139,23 @@
     background-color: #fff;
     font-size: 22px;
 }
+
 .down_icon:hover{
     cursor: pointer;
 }
+
 .things_search{
     background-color: #fff;
     border: 2px solid #002f34;
     border-radius: 3px;
-    height: 44px;
-    margin-left: 14px;
+    height: 48px;
+    margin-left: 17px;
     margin-top: 10px;
     box-shadow: 1px 1px #dadada;
-    width: 730px;
+    width: 735px;
     display: flex;
 }
+
 .things_search input{
     border: 0px solid;
     background-color: #fff;
@@ -74,6 +165,7 @@
     height: 100%;
     font-size: 16px;
 }
+
 .search_icon{
     border: 0px solid;
     height: 100%;
@@ -81,18 +173,22 @@
     background-color: #002f34;
     border-radius: 0 3px 0 3px;
 }
+
 .search_icon:hover{
     cursor: pointer;
 }
+
 .search_icon i{
     color: #fff;
     margin-top: 10px;
     margin-left: 15px;
     font-size: 22px;
 }
+
 .signinBtn{
     display: flex;
 }
+
 .loginBtn{
     border: 0px solid;
     background-color: rgb(245, 245, 245);
@@ -100,44 +196,65 @@
     margin-top: 22px;
     margin-left: 28px;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 17px;
     color: #002f34;
 }
+
 .loginBtn:hover{
     cursor: pointer;
 }
+
 .plus_icon{
     width: 100px;
     display: flex;
     height: 48px;
     margin-top: 10px;
-    margin-left: 10px;
-    border: 6px solid hsl(186, 65%, 32%);
-    background-color:rgb(245, 245, 245) ;
+    margin-left: 8px;
+    border: 6px solid;
+    border-color: rgb(49, 237, 243) rgb(104, 70, 224) rgb(255, 208, 0) rgb(255, 208, 0)  ;
+    /* border: 6px solid hsl(186, 65%, 32%); */
+    background-color: #fff;
     color: #002f34;
     border-radius: 30px;
+    box-shadow: 2px 2px 2px 2px rgb(199, 180, 180);
 }
+
 .plus_icon:hover{
     cursor: pointer;
 }
+
 .plus_icon div{
     display: flex;
-    margin-top: 12px;
+    margin-top: 9px;
     margin-left: 13px;
 }
-.plus_icon h3{
-    margin: 0 auto ;
-    margin-top: 10px;
+
+.plus_icon h6{
+    margin-left: 5px;
+    margin-top: 6px;
 }
+
 .main_SubHeader{
     display: flex;
+    /* position: fixed; */
+    /* background-color: #fff; */
 }
+
 .hNav{
     height: 45px;
     width: 150px;
-    margin-top: 1px;
+    margin-top: 40px;
     margin-left: 18px;
     font-size: 14px;
+    color: #303030;
+}
+
+strong{
+    color: black;
+}
+
+.view{
+    text-decoration: none;
 }
 .downBtnOfhNav{
     border: 0px solid;
@@ -148,22 +265,27 @@
     height: 45px;
     font-family: sans-serif;
 }
+
 .downBtnOfhNav:hover{
     cursor: pointer;
 }
+
 .downBtnOfhNav i{
     margin-left: 5px;
     font-size: 16px;
 }
+
 .hNavOthers{
-    margin-top: 8px;
+    margin-top: 48px;
     height: 30px;
     margin-left: 20px;
     display: flex;
 }
+
 .items li{
     display: inline-block;
 }
+
 .hNavOthers button{
     font-size: 14px;
     border: 0px solid;
@@ -171,74 +293,96 @@
     margin-left: 10px;
     font-family: sans-serif;
 }
+
 .hNavOthers button:hover{
     cursor: pointer;
     color: lightskyblue;
 }
+
 .bannerDiv{
+    /* position: fixed; */
+    margin-top: 0px;
     width: 100%;
     height: 250px;
     background-image: url(./images/olxMainBanner.jpg);
     background-position: center;
 }
+
 .mainSubBanner{
+    /* position: fixed; */
+    margin-top: 0px;
     display: flex;
     justify-content: center;
-    max-width: 1400px;
+    width: 100%;
     height: 198px;
     background-color: #002F3408;
     border: 0px solid;
     box-shadow: 1px #dadada;
 }
+
 .mobile{
     margin-left:0px ;
 }
+
 .FirstDivSubBanner{
     margin-left: 20px;
     width: 360px;
 }
+
 .FirstSpanSubBanner{
     font-size: 34px;
     font-weight: 600;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 .SecondSpanSubBanner{
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
     color: grey;
 }
+
 .SecondDivSubBanner{
     max-width: 400px;
     margin-left: 40px;
 }
+
 .SecondDivSubBanner span{
     margin-top: 40px;
     font-size: 17px;
     font-weight: 600;
 }
+
 .SecondDivSubBanner button{
     border: 0px solid;
     margin: 0px;
     background-color: #c2c5c508;
 }
+
 .store{
     width: 128px;
     height: 40px;
 }
+
 .store:hover{
     cursor: pointer;
 }
+
 .mainSubFooter{
+    /* position: fixed; */
+    margin-top: 1px;
+    width: 100%;
     display: flex;
     height: 160px;
     background-color: #ebeeef;
     /* justify-content: space-around; */
     max-width: 1400px;
 }
+
 .mainSubFooter section{
     margin-left: 70px;
     margin-top: 10px;
 }
+
 .justheading{
     margin-top: 10px;
     font-size: 14px;
@@ -251,6 +395,7 @@
     list-style-type: none;
     display: inline;
 }
+
 .ulSubFooter li{
     display: list-item;
     text-align: left;
@@ -258,26 +403,32 @@
     font-size: 13px;
     color: rgb(143, 140, 140);
 }
+
 .sociallinks{
     display: flex;
 }
+
 .sociallinks a{
     font-size: 20px;
     margin-left: 15px;
 }
+
 .storeBtn{
     border: 0px solid;
 }
+
 .storeBtn img{
     width: 110px;
     height: 32px;
 }
+
 .mainFooter{
     background-color: #002f34;
     width: 100%;
     height: 50px;
     display: flex;
 }
+
 .section1{
     font-family: Arial, Helvetica, sans-serif;
     color: #fff;
@@ -286,15 +437,22 @@
     margin-left: 90px;
     margin-top: 15px;
 }
+
 .section1 a{
-    margin-left: 10px;
+    font-family: sans-serif;
+    font-size: 12px;
+    margin-left: 6px;
 }
+
+.section1 span{
+    margin-left: 5px;
+}
+
 .section2{
     font-family: Arial, Helvetica, sans-serif;
     color: #fff;
     font-size: 13px;
     font-weight: bold;
-    margin-left: 560px;
+    margin-left: 615px;
     margin-top: 15px;
 }
-

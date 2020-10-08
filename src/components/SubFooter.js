@@ -51,7 +51,7 @@ class SubFooter extends React.Component{
                             <a><i class="fa fa-instagram"></i></a>
                         </div>
                     </div>
-                    <div class="storeBtnDiv">
+                    <div class="storeBtnDiv"><br/>
                         <button className="storeBtn"><img src={AppStoreLogo}/></button>
                         <button className="storeBtn"><img src={GooglePlayStoreLogo}/></button>
                     </div>

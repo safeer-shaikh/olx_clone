@@ -7,11 +7,13 @@ class Footer extends React.Component{
                 <section className="section1">
                     <span>Other Countries</span>
                     <a>India</a>
+                    <span>-</span>
                     <a>South Africa</a>
+                    <span>-</span>
                     <a>Indonesia</a>
                 </section>
                 <section className="section2">
-                    <span>Free Classified in pakistan . 2006-2020 OLX</span>
+                    <span>Free Classified in pakistan . &copy; 2006-2020 OLX</span>
                 </section>
             </div>
         )

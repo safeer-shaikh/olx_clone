@@ -15,7 +15,7 @@ class SubHeader extends React.Component{
             <div className="main_SubHeader">
                 <div className="hNav">
                     <button className="downBtnOfhNav">
-                        <a className="allBtn" className="view"><strong>ALL CATAGORIES</strong></a>
+                        <a className="allBtn" className="view" href="#"><strong>ALL CATAGORIES</strong></a>
                         <i class="fa fa-chevron-down"></i>
                     </button>
                 </div>
