@@ -39,8 +39,12 @@ class Header extends React.Component{
                         </div>
                     </div>
                     <div className="things_search">
-                        <input type="text" placeholder="  Find Cars, Mobile Phones and more..." />
-                        <div className="search_icon"><i className="fa fa-search"></i></div>
+                        <input className="form-control" type="text" placeholder="  Find Cars, Mobile Phones and more..." />
+                        <div className="search_icon">
+                            <button className="search_iconBtn">
+                                <i className="fa fa-search"></i>
+                            </button>
+                        </div>
                     </div>
                     <div className="signinBtn">
                         <button className="loginBtn">Login</button>

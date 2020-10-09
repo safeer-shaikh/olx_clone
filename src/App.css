@@ -54,7 +54,7 @@
     overflow-y: scroll;
     width: 268px;
     margin-right: 0px;
-    max-height: 320px;
+    /* max-height: 320px; */
 }
 
 .dropdown-item{
@@ -174,15 +174,28 @@
     border-radius: 0 3px 0 3px;
 }
 
+.form-control{
+    margin-left: 10px;
+}
+
 .search_icon:hover{
     cursor: pointer;
 }
 
 .search_icon i{
     color: #fff;
-    margin-top: 10px;
-    margin-left: 15px;
+    margin-top: 0px;
+    margin-left: 3px;
     font-size: 22px;
+}
+
+.search_iconBtn{
+    background-color: transparent;
+    margin: 0px;
+    padding: 0px;
+    width: 50px;
+    height: 45px;
+    border: 0px solid;
 }
 
 .signinBtn{
@@ -240,7 +253,7 @@
     /* background-color: #fff; */
 }
 
-.hNav{
+/* .hNav{
     height: 45px;
     width: 150px;
     margin-top: 40px;
@@ -264,21 +277,95 @@ strong{
     width: 160px;
     height: 45px;
     font-family: sans-serif;
+} */
+
+/* .hNav{
+    margin-top: 46px;
+    width: 60px;
+}
+
+.downBtnOfhNav{
+    background-color: #fff;
+    width: 150px;
+    height: 42px;
+    margin-left: 36px;
+}
+
+.downBtnOfhNav:focus{
+    background-color: #fff;
+}
+
+.downBtnOfhNav:active{
+    background-color: #fff;
+}
+
+.downBtnOfhNav span{
+    color: black;
+    margin-top: 7px;
+    font-size: 14px;
 }
 
 .downBtnOfhNav:hover{
     cursor: pointer;
+    background-color: #fff;
 }
 
 .downBtnOfhNav i{
-    margin-left: 5px;
-    font-size: 16px;
+    color: black;
+    margin-left: 9px;
+    margin-top: 7px;
+    font-size: 19px;
+} */
+
+.hNav{
+    margin-top: 46px;
+    margin-left: 32px;
+    height: 42px;
+}
+
+.downBtnOfNav{
+    border: 0px solid;
+    background-color: #fff;
+    height: 42px;
+}
+.downBtnOfNav:active:focus{
+    outline: none;
+}
+
+.downBtnOfNav span{
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+.downBtnOfNav i{
+    margin-left: 10px;
+}
+
+.moreInAllCatagories{
+    width: 1260px;
+    margin-left: 50px;
+    margin: 0px;
+    overflow: hidden;
+    height: 1180px;
+    margin-top: 108px;
+}
+
+.divOfdropdownMenu{
+    
+}
+
+.Mobiles{
+    background-color: aqua;
+    margin-left: 20px;
+    margin-top: 20px;
+    height: 140px;
+    width: 200px;
 }
 
 .hNavOthers{
-    margin-top: 48px;
+    margin-top: 53px;
     height: 30px;
-    margin-left: 20px;
+    margin-left: 15px;
     display: flex;
 }
 
@@ -301,7 +388,7 @@ strong{
 
 .bannerDiv{
     /* position: fixed; */
-    margin-top: 0px;
+    margin-top: 2px;
     width: 100%;
     height: 250px;
     background-image: url(./images/olxMainBanner.jpg);
