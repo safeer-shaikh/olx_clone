@@ -343,25 +343,129 @@ strong{
 
 .moreInAllCatagories{
     width: 1260px;
+    height: 1300px;
     margin-left: 50px;
     margin: 0px;
     overflow: hidden;
-    height: 1180px;
     margin-top: 108px;
+    display: block;
+    position: fixed;
 }
 
 .divOfdropdownMenu{
-    
+    font-family:sans-serif;
+    display: block;
+    column-count: 4;
+    width: 100%;
+    padding: 16px 16px 0px;
+    /* height: 1000px; */
+    justify-content: space-between;
 }
 
-.Mobiles{
-    background-color: aqua;
-    margin-left: 20px;
-    margin-top: 20px;
-    height: 140px;
+/* .Mobiles{
+    margin-left: 9px;
+    margin-top: 3px;
+    height: 130px;
     width: 200px;
 }
+.MobileHeading{
+    font-size: 14px;
+}
+.Vehicles{
+    margin-left: 9px;
+    margin-top: 3px;
+    width: 200px;
+    height: 286px;
+}
+.Vehicles div{
+    margin-top: 5px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.PropertySale{
+    margin-left: 9px;
+    margin-top: 3px;
+    width: 250px;
+    height: 179px;
+}
+.PropertySale div{
+    margin-top: 5px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.PropertyRent{
+    margin-left: 9px;
+    margin-top: 3px;
+    width: 240px;
+    height: 200px;
+}
+.PropertyRent div{
+    margin-top: 5px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Electronics{
+    width: 250px;
+    margin-left: 12px;
+    margin-top: 320px;
+    height: 280px;
+}
+.Electronics div{
+    margin-top: 5px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Bikes{
+    width: 250px;
+    margin-left: 12px;
+    margin-top: 33px;
+    height: 190px;
+}
+.Bikes div{
+    margin-top: 5px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Business{
+    width: 250px;
+    margin-left: 12px;
+    margin-top: 3px;
+    height: 200px;
+}
+.Business div{
+    margin-top: 5px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
+.Services div{
+    margin-top: 5px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+} */
+.mainContent{
+    width: 250px;
+    margin-left: 12px;
+    margin-top: 3px;
+    margin-top: 33px;
+}
+.subContent{
+    margin-top: 5px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.subContent a{
+    text-decoration: none;
+    color: black;
+}
+.subContent a:hover{
+    color: skyblue;
+}
+.Services{
+    height: 765px;
+    display: "block";
+    margin-top: 30px;
+}
 .hNavOthers{
     margin-top: 53px;
     height: 30px;
