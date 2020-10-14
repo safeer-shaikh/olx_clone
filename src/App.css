@@ -27,12 +27,24 @@ body{
     width: 40px;
     height: 40px;
 }*/
-.image_settings{ max-width: 48px; height: auto; }
+.image_settings{ 
+    width: 48px;
+    height: auto; 
+    margin-left: 25px;
+}
 
 img{ max-width: 100%; height: auto;}
-
+.input-group-append{
+    width: 100%;
+}
 .input-group-append button{
     width: 100%;
+}
+.mainDropDown{
+    width: 100%;
+}
+.col-md-3{
+    padding: 0px;
 }
 
 .loc_search{
@@ -514,9 +526,16 @@ i.fa.fa-chevron-down.naiPakarisko {
 }
 .container-tm{
     width: 100%;
+    
+}
+.mainBody1{
+    width: 100%;
     display: flex;
     justify-content: center;
-    
+}
+
+.carousel{
+    max-width: 1215px;
 }
 .featuredBody{
     margin-top: 20px;
@@ -591,9 +610,6 @@ i.fa.fa-chevron-down.naiPakarisko {
     width: 100%;
     height: 100px;
 }
- label{
-     float: left;
- }
 .price{
     display: block;
     color: #303030;
@@ -612,6 +628,32 @@ i.fa.fa-chevron-down.naiPakarisko {
     margin-right: 5px;
     font-size: 13px;
     color: #002F34A3;
+}
+
+.mainBody2{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.freshRecom{
+    margin-left: 46px;
+    margin-top: 20px;
+}
+
+.freshRecom > span{
+    margin-left: 30px;
+    font-size: 24px;
+}
+.allProductsDiv{
+    max-width: 1300px;
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+}
+.allProductsUl{
+    margin: 0px;
+    list-style-type: none;
 }
 .dropdown-menu.mainDropDown h6 {
     color: #3a77ff;

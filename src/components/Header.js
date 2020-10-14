@@ -5,7 +5,7 @@ class Header extends React.Component{
 render(){
 return(
 <div className="header_settings">
-    <div className="container">
+    <div className="container-tm">
         <div className="row align-items-center">
             <div className="col-md-1">
                 <div className="image_settings">
