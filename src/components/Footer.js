@@ -24,11 +24,7 @@ return(
                 </div>
             </div>
         </div>
-    </div>
-    <div className="overlay"></div>
-    <div className="mainPopup">
-        <h1>Ahmed</h1>
-    </div>
+    </div>  
 </>
 )
 }

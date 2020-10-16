@@ -1,6 +1,10 @@
 import React from 'react';
 import '../App.css'
 import olxLogo from '../images/finalOlxLogo.png'
+import loginView1  from '../images/loginView1.png'
+import loginView2 from '../images/loginView2.png'
+import loginView3 from '../images/loginView3.png'
+
 class Header extends React.Component{
 render(){
 return(
@@ -52,13 +56,59 @@ return(
             </div>
             <div className="col-md-2">
                  <div className="signinBtn">
-                    <button className="loginBtn">Login</button>
-                    <button className="plus_icon">
+                    <button className="loginBtn" data-modal-target="#modal">Login</button>
+                    <button className="plus_icon" data-modal-target="#modal">
                         <div><i className="fa fa-plus"></i></div>
                         <h6>SELL</h6>
                     </button>
                 </div>
             </div>
+            <div className="modal" id="modal">
+                <button data-close-button className="close-button"><i className="fa fa-times"></i></button>
+                <div id="carouselExampleIndicators" className="carousel slide" data-ride="false">
+                    <ol className="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div className="carousel-inner">
+                        <div className="carousel-item active loginItems">
+                            <img className="d-block" src={loginView1} alt="First slide"/>
+                            <div className="carousel-caption">
+                                <p style={{color: "black"}}>Help make OLX safer place to buy and sell</p>
+                            </div>
+                        </div>
+                        <div className="carousel-item loginItems">
+                            <img className="d-block" src={loginView2} alt="Second slide"/>
+                            <div className="carousel-caption d-none d-md-block">
+                                <p style={{color: "black"}}>Contact and clsoe deals faster</p>
+                            </div>
+                        </div>
+                        <div className="carousel-item loginItems">
+                            <img className="d-block" src={loginView3} alt="Third slide"/>
+                            <div className="carousel-caption d-none d-md-block">
+                                <p style={{color: "black"}}>Save all your favourite items in one place</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a className="carousel-control-prev controlers" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span className="sr-only">Previous</span>
+                    </a>
+                    <a className="carousel-control-next controlers" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span className="sr-only">Next</span>
+                    </a>
+                </div>
+                <div className="modal-body">
+                        <button>Continue with phone</button>
+                        <button><i className="fa fa-facebook loginfacebookicon"></i>Continue with facebook</button>
+                        <button><i className="fa fa-google loginfacebookicon" ></i>Continue with google</button>
+                        <button>Continue with email</button>
+                </div>
+                <span className='loginSpan'>We won't share your personal details with anyone</span>
+            </div>
+            <div id="overlay"></div>
         </div>
     </div>
 </div>
