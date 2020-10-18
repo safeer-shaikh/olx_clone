@@ -31,13 +31,15 @@ return(
                                 <i className="fa fa-chevron-down naiPakarisko"></i>
                             </button>
                             <div className="dropdown-menu mainDropDown">
+                                <button className="currontlocationBtn" data-modal-target="#locationmodal">
                                 <h6>Use Current Location <span>Location blocked. Check browser/phone settings.</span></h6>
+                                </button>
                                 <h5>Popular locations</h5>
                                 <ul className="locationList">
-                                    <li><a href="#"><i className="fa fa-map-marker"></i> punjab</a></li>
-                                    <li><a href="#"><i className="fa fa-map-marker"></i> Islamabad Capital Territory</a></li>
-                                    <li><a href="#"><i className="fa fa-map-marker"></i> Sindh</a></li>
-                                    <li><a href="#"><i className="fa fa-map-marker"></i> Khyber Pakhtunkhwa</a></li>
+                                    <li><a href="#" data-modal-target="#locationmodal"><i className="fa fa-map-marker"></i> punjab</a></li>
+                                    <li><a href="#" data-modal-target="#locationmodal"><i className="fa fa-map-marker"></i> Islamabad Capital Territory</a></li>
+                                    <li><a href="#" data-modal-target="#locationmodal"><i className="fa fa-map-marker"></i> Sindh</a></li>
+                                    <li><a href="#" data-modal-target="#locationmodal"><i className="fa fa-map-marker"></i> Khyber Pakhtunkhwa</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -109,6 +111,14 @@ return(
                 <span className='loginSpan'>We won't share your personal details with anyone</span>
             </div>
             <div id="overlay"></div>
+        
+            <div className="modal" id="locationmodal" style={{height: 200}}>
+                <button data-close-button className="close-button" style={{fontSize: 26, marginLeft: "90%"}}><i className="fa fa-times"></i></button>
+                <h3 style={{fontSize:20, fontWeight: "bold",marginTop: 15, width: 300,marginLeft: 20}}>Geolocation is blocked</h3>
+                <p style={{fontSize: 15, marginLeft: 20}}>Looks like your geolocation permissions are blocked. Please, provide geolocation access in your browser settings and get the nearest ads.</p>
+            </div>
+            <div id="overlay"></div>
+
         </div>
     </div>
 </div>

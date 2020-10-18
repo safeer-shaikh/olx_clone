@@ -3,6 +3,7 @@ import React from 'react'
 import '../App.css'
 import YourCard from './YourCard'
 import Items from './Items'
+import $ from 'jquery'
 
 class Body extends React.Component{
     render(){   
@@ -67,7 +68,7 @@ class Body extends React.Component{
                 </div>
                 <div className="mainBody2">
                     <div className="allProductsDiv">
-                        <ul className="allProductsUl">
+                        <ul id="content" className="allProductsUl">
                             {
                             liItems5.map((liItems5) => 
                                 <li style={{display: "inline-block",marginLeft: 15 , width: 285, marginTop: 15}}>{liItems5}</li>
@@ -77,8 +78,15 @@ class Body extends React.Component{
                             liItems15.map(liItems15 => 
                                 <li style={{display: "inline-block",marginLeft: 15 , width: 285, marginTop: 15}}>{liItems15}</li>
                             )}
-                            <li className="loadMoreLi"><button className="loadMoreBtn">Load More</button></li>
+                            {/* {
+                                liItems15.map(liItems15 => 
+                                <li className="specialList" style={{display: "inline-block",marginLeft: 15 , width: 285, marginTop: 15}}>{liItems15}</li>
+                                    )
+                            } */}
                         </ul>
+                        <div className="loadMoreLi">
+                            <button className="loadMoreBtn">Load More</button>
+                        </div>
                     </div>
                 </div>
             </div>

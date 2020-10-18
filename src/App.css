@@ -131,6 +131,14 @@ img{ max-width: 100%; height: auto;}
     margin: 0px;
     padding: 0px;
 }
+.currontlocationBtn{
+    height: 95px;
+    border: 0px solid;
+    background-color: #fff;
+}
+.currontlocationBtn:hover{
+    background-color: #c8f8f6;
+}
 .btn i{
     margin-top: 8px;
 }
@@ -664,7 +672,7 @@ i.fa.fa-chevron-down.naiPakarisko {
 }
 .allProductsDiv{
     max-width: 1300px;
-    display: flex;
+    display: block;
     justify-content: center;
     margin-top: 0px;
 }
