@@ -294,6 +294,7 @@ i.fa.fa-chevron-down.naiPakarisko {
 .main_SubHeader{
     display: flex;
     margin-top: 70px;
+    border-bottom: 1px solid lightgrey;
 }
 
 .downBtnOfNav{
