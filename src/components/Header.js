@@ -1,4 +1,5 @@
 import React from 'react';
+// import Link from 'react-router-dom'
 import '../App.css'
 import olxLogo from '../images/finalOlxLogo.png'
 import loginView1  from '../images/loginView1.png'
@@ -7,13 +8,16 @@ import loginView3 from '../images/loginView3.png'
 
 class Header extends React.Component{
 render(){
+    // gotoitems = () => {
+    //     this.props.history.push('/items')
+    // }
 return(
 <div className="header_settings">
     <div className="container-tm">
         <div className="row align-items-center">
             <div className="col-md-1">
                 <div className="image_settings">
-                    <a href="./">
+                    <a href="/">
                         <img src={olxLogo} alt="olx Logo" />
                     </a>
                 </div>
@@ -50,9 +54,11 @@ return(
                 <div className="things_search">
                     <input className="form-control" type="text" placeholder="  Find Cars, Mobile Phones and more..." />
                     <div className="search_icon">
-                        <button className="search_iconBtn">
-                            <i className="fa fa-search"></i>
-                        </button>
+                        <a href="/items">
+                            <button className="search_iconBtn" >
+                                <i className="fa fa-search"></i>
+                            </button>
+                        </a>
                     </div>
                 </div>
             </div>
