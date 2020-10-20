@@ -2,7 +2,7 @@ import React from 'react'
 import './Products.css'
 import Header from '../components/Header'
 import SubHeader from '../components/SubHeader'
-import { nodeName } from 'jquery';
+// import { nodeName } from 'jquery';
 
 class Products extends React.Component{
     render(){
@@ -11,7 +11,7 @@ class Products extends React.Component{
             <div>
                 <Header />
                 <SubHeader />
-                <div>
+                <div className="body-products">
                     <div className="container">
                         <div className="productsSubHeader">
                             <ul className="products-subHeader-ul" >
@@ -25,6 +25,35 @@ class Products extends React.Component{
                                 }
                             </ul>
                         </div>
+                    </div>
+                    <div className="home-div container-tm" >
+                        <ol>
+                            <li><a href="/">Home</a></li>
+                        </ol>
+                    </div>
+                    <div className="heading">
+                        <h1>Pakistan Free classifieds</h1>
+                    </div>
+                    <div className="both-divs" >
+                        <div className="left-div" >
+                            <div>
+                                <div className="filter">
+                                    <div><span>Filters</span></div>
+                                </div>
+                            </div>
+                            <div className="catagories">
+                                <div className="dropdown">
+                                    <button className="btn" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Categories<i className="fa fa-chevron-down"></i>
+                                    </button>
+                                    <span>All Categories</span>
+                                    <div className="dropdown-menu all-categories" aria-labelledby="dropdownMenu2">
+                                        <a href="#">All Categories</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="right-div" style={{backgroundColor: 'orange'}}></div>
                     </div>
                 </div>
             </div>

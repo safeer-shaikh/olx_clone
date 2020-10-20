@@ -14,3 +14,80 @@
     color: black;
     text-decoration: none;
 }
+.home-div{
+    margin-top: 50px;
+}
+.home-div > ol{
+    list-style-type: none;
+    font-size: 14px;
+}
+.home-div > ol > li > a{
+    color: rgb(170, 169, 169);
+}
+.home-div > ol > li > a:hover{
+    color: black;
+    text-decoration: none;
+}
+.heading{
+    width: 100%;
+}
+.heading > h1{
+    font-weight: 700;
+    font-size: 25px;
+    width: 350px;
+    margin-left: 40px;
+}
+.both-divs{
+    display: flex;
+    width: 100%;
+    max-width: 1280px;
+    margin-left: 40px;
+}
+.left-div{
+    width: 304px;
+    background: #fff;
+    border-radius: 3px;
+    position: relative;
+    height: 100%;
+}
+.filter{
+    padding: 16px 0px 16px 16px;
+    font-size: 16px;
+    font-weight: 700;
+}
+.catagories{
+    border-top: 1px solid rgba(0,47,52,.2);
+    padding: 16px;
+}
+.dropdown > span{
+    font-size: 13px;
+    color: lightgray ;
+}
+.btn{
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-color: transparent;
+}
+.btn:focus{
+    outline: transparent;
+}
+.btn:active{
+    outline: transparent;
+}
+.all-categories {
+    margin-top: 5px;
+    overflow: hidden;
+    border: 0px;
+}
+.all-categories > a{
+    color: rgb(170, 169, 169);
+    font-size: 14px;
+}
+.all-categories > a:hover{
+    text-decoration: none;
+    color: black;
+}
