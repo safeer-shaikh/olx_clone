@@ -71,14 +71,14 @@ class Products extends React.Component{
                                     Locations<i className="fa fa-chevron-down"></i>
                                     </button>
                                     <span>Pakistan</span>
-                                    <div className="dropdown-menu all-categories locations" aria-labelledby="dropdownMenu2">       
-                                        <a href="/items" style={{margin: 0, color: "black", fontWeight: 600}}>Pakistan</a>
-                                        {
-                                            locations.map(locations =>
-                                            <a href="#">{locations}</a>
-                                                )
-                                        }
-                                        <a href="/items" style={{color: "#3a77ff"}}>View more</a>
+                                    <div className="dropdown-menu all-categories locations" aria-labelledby="dropdownMenu2">
+                                            <a href="/items" style={{margin: 0, color: "black", fontWeight: 600}}>Pakistan</a>
+                                            {
+                                                locations.map(locations =>
+                                                <a href="#">{locations}</a>
+                                                    )
+                                            }
+                                            <a href="/items" style={{color: "#3a77ff"}}>View more</a>
                                     </div>
                                 </div>
                             </div>
@@ -104,15 +104,30 @@ class Products extends React.Component{
                                         <span>View</span>
                                         <button><i class="fa fa-bars"></i></button>
                                         <button><i class="fa fa-th-large"></i></button>
-                                        <button><i class="fa fa-tv-alt"></i></button>
+                                        <button><i style={{fontSize: 18,marginTop:3}} class="fa fa-th"></i></button>
                                     </div>
                                     <div className="functionality-div2" >
-                                        <div>
+                                        {/* <div>
                                             <button>
                                             <span style={{textTransform: "uppercase", fontWeight: 600, fontSize: 14}}>Sort By</span>
                                             <span style={{fontSize: 14}}>: Newly listed</span>
                                             <i className="fa fa-chevron-down"></i>
                                             </button>
+                                        </div> */}
+                                        <div className="dropdown">
+                                            <button className="btn" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <span style={{textTransform: "uppercase", fontWeight: 600, fontSize: 14, marginTop: 6}}>Sort By</span>
+                                                <span style={{fontSize: 14,marginTop: 6}}>: Newly listed</span>
+                                                <i className="fa fa-chevron-down"></i>
+                                            </button>
+                                            <div className="dropdown-menu listed" aria-labelledby="dropdownMenu2">
+                                                <ul>
+                                                    <a href="#"><li>Newly listed</li></a>
+                                                    <a href="#"><li>Most relevant</li></a>
+                                                    <a href="#"><li>Lowest price</li></a>
+                                                    <a href="#"><li>Highest price</li></a>
+                                                </ul>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

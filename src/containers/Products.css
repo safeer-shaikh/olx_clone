@@ -98,6 +98,7 @@
 .locations{
     border-top: 1px solid rgba(0,47,52,.2);
     padding: 16px;
+    z-index: 0;
 }
 .locations > a{
     margin-top: 5px;
@@ -108,18 +109,21 @@
     display: flex;
 }
 .price-input > input{
+    width: 105px;
     height: 40px;
     border-top: none;
     border-right: none;
     border-left: none;
     margin-left: 3px;
     background-color: rgb(236, 225, 217);
+    z-index: 0;
 }
 .price-input > button{
     margin-left: 6px;
     width: 40px;
     border: 1px solid lightgray;
     box-shadow: 1px 0px 2px 1px darkgray;
+    z-index: 0;
 
 }
 /* .show{
@@ -138,7 +142,7 @@
 .functionality-div1{
     margin-top: 0px;
     display: flex;
-    margin-left: 380px;
+    margin-left: 360px;
 
 }
 .functionality-div1 > span{
@@ -154,6 +158,9 @@
     border-radius: 100%;
     width: 30px;
     height: 30px;
+}
+.functionality-div1 > button:hover{
+    background-color: skyblue;
 }
 .functionality-div > button > i{
     font-size: 16px;
@@ -177,3 +184,23 @@
     list-style-type: none;
     display: inline-block;
 }
+.listed{
+    margin-top: 10px;
+    width: 250px;
+    overflow: hidden;
+    height: 180px;
+}
+.listed > ul{
+    display: contents;
+    list-style-type: none;
+}
+.listed > ul > a{
+    color: black;
+    text-decoration: none;
+}
+.listed > ul > a > li{
+    height: 44px;
+}
+.listed > ul > a > li:hover{
+    background-color: skyblue;
+} 
