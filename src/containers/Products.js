@@ -9,6 +9,12 @@ import Footer from '../components/Footer'
 // import { nodeName } from 'jquery';
 
 class Products extends React.Component{
+    constructor(props){
+        super()
+        this.state = {
+            name: "All Categories",
+        }
+    }
     render(){
         let liData = ["iphone x","laptop","iphone 7plus","honda 125","honda city","honda civic","mehran","toyota corolla","cultus","mobile"];
         let locations = ["Punjab (528663)","Sindh (246913)","Islamabad Capital territory(81882)","Khyber PakhtunKhwa(49781)","Balochistan(5907)"];
@@ -57,7 +63,7 @@ class Products extends React.Component{
                             <div className="catagories">
                                 <div className="dropdown">
                                     <button className="btn" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Categories<i className="fa fa-chevron-down"></i>
+                                    {this.state.name}<i className="fa fa-chevron-down"></i>
                                     </button>
                                     <span>All Categories</span>
                                     <div className="dropdown-menu all-categories" aria-labelledby="dropdownMenu2">

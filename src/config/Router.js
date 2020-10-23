@@ -1,4 +1,3 @@
-import { extend } from 'jquery'
 import React from 'react'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 import Home from '../containers/Home'
@@ -9,7 +8,7 @@ class AppRouter extends React.Component{
         return(
             <Router>
                 <Route exact path='/' component={Home} />
-                <Route path='/items' component={Products} />
+                <Route path='/items' component={Products}/>
             </Router>
         )
     }

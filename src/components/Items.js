@@ -1,3 +1,4 @@
+import { contains } from 'jquery';
 import React from 'react'
 import '../App.css'
 class Items extends React.Component{

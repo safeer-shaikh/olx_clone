@@ -29,7 +29,7 @@ class Body extends React.Component{
                     <div className="featuredBody">
                         <div className="featuredText">
                             <h4>More on Mobile Phones</h4>
-                            <a href="#"><strong>View More</strong></a>   
+                            <a href="/items"><strong>View More</strong></a>   
                         </div>
                         <div id="carouselExampleControls" className="carousel slide" data-interval="false">
                             <div className="carousel-inner">
