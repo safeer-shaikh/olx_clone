@@ -20,11 +20,11 @@ class Body extends React.Component{
         const price15 = [];
         const date15 = [];
         const data15 = [];
-        for(var i = 0; i < 15; i++){
+        for(var i = 0; i < 100; i++){
             liItems15[i] = <Items imageSource={images15[i]} price={price15[i]} date={date15[i]} data={data15[i]} />
         }
         return(
-            <div className="container-tm">
+            <div className="container">
                 <div className="mainBody1">
                     <div className="featuredBody">
                         <div className="featuredText">
@@ -34,9 +34,15 @@ class Body extends React.Component{
                         <div id="carouselExampleControls" className="carousel slide" data-interval="false">
                             <div className="carousel-inner">
                                 <div className="carousel-item active">
-                                    <div className="fullCard "><Items imageSource={require('../images/phone1.jpg')} price="Rs 16,999" date="Sep 15" data="Branded Mobiles with best Quality"/></div>
-                                    <div className="fullCard"><Items imageSource={require('../images/phone2.jpg')} price="Rs 13,999" date="Sep 18" data="Huawei mate 10 lite 4GB RAM" /></div>
-                                    <div className="fullCard"><Items imageSource={require('../images/phone3.jpg')} price="Rs 18,999" date="3 Days Ago" data="moto one macro box packed" /></div>
+                                    <div className="fullCard ">
+                                        <Items imageSource={require('../images/phone1.jpg')} price="Rs 16,999" date="Sep 15" data="Branded Mobiles with best Quality"/>
+                                    </div>
+                                    <div className="fullCard">
+                                        <Items imageSource={require('../images/phone2.jpg')} price="Rs 13,999" date="Sep 18" data="Huawei mate 10 lite 4GB RAM" />
+                                        </div>
+                                    <div className="fullCard">
+                                        <Items imageSource={require('../images/phone3.jpg')} price="Rs 18,999" date="3 Days Ago" data="moto one macro box packed" />
+                                        </div>
                                     <div className="fullCard" style={{marginRight: 15}}><Items imageSource={require('../images/phone4.jpg')} price="Rs 10,500" date="Sep 17" data="Huawei 6x 6gbrom 64gb ram" /></div>
                                 </div>
                                 <div className="carousel-item">
@@ -64,19 +70,19 @@ class Body extends React.Component{
                     </div>
                 </div>
                 <div className="freshRecom" >
-                        <span>Fresh recommendations</span>
+                    <span>Fresh recommendations</span>
                 </div>
                 <div className="mainBody2">
                     <div className="allProductsDiv">
                         <ul id="content" className="allProductsUl">
                             {
                             liItems5.map((liItems5) => 
-                                <li style={{display: "inline-block",marginLeft: 15 , width: 285, marginTop: 15}}>{liItems5}</li>
+                                <li>{liItems5}</li>
                             )}
-                            <li style={{display: "inline-block",marginLeft: 15 , width: 285, marginTop: 15}}><YourCard /></li>
+                            <li><YourCard /></li>
                             {
                             liItems15.map(liItems15 => 
-                                <li style={{display: "inline-block",marginLeft: 15 , width: 285, marginTop: 15}}>{liItems15}</li>
+                                <li>{liItems15}</li>
                             )}
                             {/* {
                                 liItems15.map(liItems15 => 

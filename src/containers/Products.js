@@ -62,7 +62,7 @@ class Products extends React.Component{
                             </div>
                             <div className="catagories">
                                 <div className="dropdown">
-                                    <button className="btn" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <button className="btn" type="button" >
                                     {this.state.name}<i className="fa fa-chevron-down"></i>
                                     </button>
                                     <span>All Categories</span>
@@ -73,7 +73,7 @@ class Products extends React.Component{
                             </div>
                             <div className="locations">
                                 <div className="location-show">
-                                    <button className="btn" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <button className="btn" type="button" >
                                     Locations<i className="fa fa-chevron-down"></i>
                                     </button>
                                     <span>Pakistan</span>
@@ -90,7 +90,7 @@ class Products extends React.Component{
                             </div>
                             <div className="catagories">
                                 <div className="dropdown">
-                                    <button className="btn" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <button className="btn" type="button">
                                     Price<i className="fa fa-chevron-down"></i>
                                     </button>
                                     <span>All Categories</span>
@@ -121,7 +121,7 @@ class Products extends React.Component{
                                             </button>
                                         </div> */}
                                         <div className="dropdown">
-                                            <button className="btn" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <button className="btn" type="button" >
                                                 <span style={{textTransform: "uppercase", fontWeight: 600, fontSize: 14, marginTop: 6}}>Sort By</span>
                                                 <span style={{fontSize: 14,marginTop: 6}}>: Newly listed</span>
                                                 <i className="fa fa-chevron-down"></i>

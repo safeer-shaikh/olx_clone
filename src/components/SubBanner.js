@@ -6,9 +6,6 @@ import GooglePlayStoreLogo from '../images/GooglePlayStoreLogo.png'
 
 class SubBanner extends React.Component{
     render(){
-        let gotoAppStore = () => {
-            window.location.push('www.google.com')
-        }
         return(
             <div className="mainSubBanner">
                 <img className="mobile" src={SubBannerImage}/>
@@ -18,7 +15,7 @@ class SubBanner extends React.Component{
                 </div>
                 <div className="SecondDivSubBanner">
                     <br/><br/><span>GET YOUR APP TODAY</span><br/><br/>
-                    <button onClick={gotoAppStore}><img className="store" src={AppStoreLogo}/></button>
+                    <button><img className="store" src={AppStoreLogo}/></button>
                     <button><img className="store" src={GooglePlayStoreLogo}/></button>
                 </div>
             </div>

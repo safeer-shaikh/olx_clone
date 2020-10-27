@@ -1,4 +1,4 @@
-import firebase from 'firebase'
+import * as firebase from 'firebase/app'
 // import 'firebase/database'
 // import 'firebase/auth'
 
@@ -14,3 +14,6 @@ var firebaseConfig = {
   };
   // Initialize Firebase
 export default  firebase.initializeApp(firebaseConfig);
+
+
+//firebase.database().ref('/').child(''todos).push(obj)

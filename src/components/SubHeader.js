@@ -1,33 +1,29 @@
 import React from 'react'
 import '../App.css'
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 class SubHeader extends React.Component{
-// constructor(){
-// super()
-// this.state = {
-// Mobiles: ["Mobile", "Tablets", "Accessories Mobile Phones"],
-// Vehicles: ["Vehicles", "Cars", "Cars On Installments", "Cars Accessories", "Spare Parts", "Buses, Vans & Trucks", "Rickshaw Chingchi", "Other Vehicles", "Boats", "Tractor & Trailers"],
-// PropertySale: ["Land & Plots", "Houses", "Apartments & Flats", "Shop-Offices-Commercial Space", "Portions & Floors"],
-// propertyRent: ["Houses", "Apartments & Flats", "Portions & Floors", "Shop-Offices-Commercial Space", "Roommates & Paying Guests", "Vacation Rentals - Guest Houses", "Land & Plots"]
-// }
-//}
+    constructor(){
+    super()
+    this.state = {
+        Mobiles: ["Tablets","Accessories","Mobile Phones"],
+        Vehicles: ["Cars","Cars on Installments","Car Accessories","Spare parts","Buses, Vans & Trucks","Rickshaw & Chingchi","Other Vehicles","Boats","Tractor & Trailers"],
+        PropertySale: ["Land & Plots","Houses","Apartments & Flats","Shops - Offices - Commercial Space"],
+        PropertyRent: ["Houses","Apartments & Flats","Portions & Floors","Shops - Offices - Commercial Space","Roommates & Paying Guest","Vacation Rentals - Guest Houses","Land & Plots","Houses","Apartments & Flats","Portions & Floors","Shops - Offices - Commercial Space","Roommates & Paying Guest","Vacation Rentals - Guest Houses","Land & Plots"],
+        Electronics: ["Computers & Accessories","TV - Video - Audio","Cameras & Accessories","Games & Entertainment","Other Home Appliances","Generators, UPS & Power Solutions","Kitchen Appliances","AC & Coolers","Fridges & Freezers","Washing Machines & Dryers"],
+        Bikes: ["Motorcycles","Spare Parts","Bicycles","ATV & Quads","Scooters"],
+        Business: [],
+        Services: [],
+        Jobs: [],
+        Animals: [],
+        Furniture: [],
+        Fashion: [],
+        Books: [],
+        Kids: [],
+    }
+    }
 render(){
-// const content = [
-// {ID:1, label: "Mobile",},
-// {ID:2, label: "Tablets",}
-// ]
 return(
 <div className="main_SubHeader">
-    {/* <div className="hNav">
-        <button className="downBtnOfhNav btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown">
-            <span><strong>ALL CATAGORIES</strong></span>
-            <i className="fa fa-chevron-down"></i>
-        </button>
-        <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a className="dropdown-item" href="#">Action</a>
-            <a className="dropdown-item" href="#">Another action</a>
-            <a className="dropdown-item" href="#">Something else here</a>
-        </div>
-    </div> */}
     <div className="container">
         <div className="row">
             <div className="col-md-2">
@@ -40,10 +36,15 @@ return(
                         <div className="divOfdropdownMenu row">
                             <div className="col-md-3">
                                 <div className="Mobiles mainContent">
-                                    <div className="subContent"><strong><a href="#">Mobiles</a></strong></div>
-                                    <div className="subContent"><a href="#">Tablets</a></div>
+                                    <div className="subContent"><strong><Link to="/items">Mobiles</Link></strong></div>
+                                    {/* <div className="subContent"><a href="#">Tablets</a></div>
                                     <div className="subContent"><a href="#">Accessories</a></div>
-                                    <div className="subContent"><a href="#">Mobile Phones</a></div>
+                                    <div className="subContent"><a href="#">Mobile Phones</a></div> */}
+                                    {
+                                        this.state.Mobiles.map((v,i) => (
+                                            <div className="SubContent" ><Link to="/" >{v}</Link></div>
+                                        ))
+                                    }
                                 </div>
                                 <div className="Vehicles mainContent">
                                     <div className="subContent"><strong><a href="#">Vehicles</a></strong></div>
