@@ -1,5 +1,6 @@
 import React from 'react'
 import '../App.css'
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 import SubBannerImage from '../images/SubBannerImage.png'
 import AppStoreLogo from '../images/AppStoreLogo.png'
 import GooglePlayStoreLogo from '../images/GooglePlayStoreLogo.png'
@@ -15,8 +16,8 @@ class SubBanner extends React.Component{
                 </div>
                 <div className="SecondDivSubBanner">
                     <br/><br/><span>GET YOUR APP TODAY</span><br/><br/>
-                    <button><img className="store" src={AppStoreLogo}/></button>
-                    <button><img className="store" src={GooglePlayStoreLogo}/></button>
+                    <Link to='/' target='_blank'><button><img className="store" src={AppStoreLogo}/></button></Link>
+                    <Link to='/' target='_blank'><button><img className="store" src={GooglePlayStoreLogo}/></button></Link>
                 </div>
             </div>
         )
