@@ -4,6 +4,7 @@ import '../App.css'
 import YourCard from './YourCard'
 import Items from './Items'
 import $ from 'jquery'
+import {Link} from 'react-router-dom'
 
 class Body extends React.Component{
     render(){   
@@ -29,7 +30,7 @@ class Body extends React.Component{
                     <div className="featuredBody">
                         <div className="featuredText">
                             <h4>More on Mobile Phones</h4>
-                            <a href="/items"><strong>View More</strong></a>   
+                            <Link to="/items"><strong>View More</strong></Link>   
                         </div>
                         <div id="carouselExampleControls" className="carousel slide" data-interval="false">
                             <div className="carousel-inner">
@@ -84,11 +85,6 @@ class Body extends React.Component{
                             liItems15.map(liItems15 => 
                                 <li>{liItems15}</li>
                             )}
-                            {/* {
-                                liItems15.map(liItems15 => 
-                                <li className="specialList" style={{display: "inline-block",marginLeft: 15 , width: 285, marginTop: 15}}>{liItems15}</li>
-                                    )
-                            } */}
                         </ul>
                         <div className="loadMoreLi">
                             <button className="loadMoreBtn">Load More</button>
