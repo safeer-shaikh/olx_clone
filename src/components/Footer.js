@@ -1,5 +1,6 @@
 import React from 'react'
 import '../App.css'
+import { Link } from 'react-router-dom'
 class Footer extends React.Component{
 render(){
 return(
@@ -10,16 +11,16 @@ return(
                 <div className="col-md-6">
                     <section className="section1">
                         <span>Other Countries</span>
-                        <a href="#">India</a>
+                        <Link to="/">India</Link>
                         <span>-</span>
-                        <a href="#">South Africa</a>
+                        <Link t0="/">South Africa</Link>
                         <span>-</span>
-                        <a href="#">Indonesia</a>
+                        <Link to="/">Indonesia</Link>
                     </section>
                 </div>
                 <div className="col-md-6 text-right">
                     <section className="section2">
-                        <span>Free Classified in pakistan . &copy; 2006-2020 OLX</span>
+                        <span>Free Classified in pakistan . &copy; OLX Clone - Safeer Shaikh - All Rights Reserved</span>
                     </section>
                 </div>
             </div>
