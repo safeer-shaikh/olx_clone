@@ -160,13 +160,13 @@ return(
             </div>
             <div className="col-md-10">
                 <div className="hNavOthers">
-                    <Link><button>Mobile Phones</button></Link>
-                    <Link><button>Cars</button></Link>
-                    <Link><button>Motorcycles</button></Link>
-                    <Link><button>Houses</button></Link>
-                    <Link><button>TV-Video-Audio</button></Link>
-                    <Link><button>Tablets</button></Link>
-                    <Link><button>Land & Plots</button></Link>
+                    <Link to='/items' ><button>Mobile Phones</button></Link>
+                    <Link to='/items'><button>Cars</button></Link>
+                    <Link to='/items'><button>Motorcycles</button></Link>
+                    <Link to='/items'><button>Houses</button></Link>
+                    <Link to='/items'><button>TV-Video-Audio</button></Link>
+                    <Link to='/items'><button>Tablets</button></Link>
+                    <Link to='/items'><button>Land & Plots</button></Link>
                 </div>
             </div>
         </div>
